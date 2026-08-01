@@ -1,1 +1,8 @@
-{}
+{
+  "crm_macd_bull_cross": {
+    "alerted": true
+  },
+  "aapl_golden_cross_sma": {
+    "alerted": true
+  }
+}
