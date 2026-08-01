@@ -1,40 +1,324 @@
 [
   {
-    "id": "crm_rsi_oversold",
-    "symbol": "CRM",
+    "id": "qqq_touch_200sma",
+    "symbol": "QQQ",
     "interval": "1day",
     "conditions": [
-      { "type": "rsi", "period": 14, "op": "<=", "value": 30 }
+      {
+        "type": "price",
+        "op": "near",
+        "compare_to": {
+          "type": "sma",
+          "period": 200
+        },
+        "tolerance_pct": 1.0
+      }
     ],
-    "message": "CRM: RSI 30 이하 (과매도)"
+    "message": "QQQ: 가격이 200일 이동평균선 근처(터치)"
   },
   {
-    "id": "crm_macd_bull_cross",
-    "symbol": "CRM",
+    "id": "qqq_macd_bull_cross",
+    "symbol": "QQQ",
     "interval": "1day",
     "conditions": [
-      { "type": "macd", "op": ">", "compare_to": { "type": "macd_signal" } }
+      {
+        "type": "macd",
+        "op": ">",
+        "compare_to": {
+          "type": "macd_signal"
+        }
+      }
     ],
-    "message": "CRM: MACD가 시그널선 위로 올라옴 (골든크로스)"
+    "message": "QQQ: MACD가 시그널선 위로 (골든크로스)"
   },
   {
-    "id": "aapl_golden_cross_sma",
-    "symbol": "AAPL",
+    "id": "qqq_rsi_oversold",
+    "symbol": "QQQ",
     "interval": "1day",
     "conditions": [
-      { "type": "sma", "period": 20, "op": ">", "compare_to": { "type": "sma", "period": 50 } }
+      {
+        "type": "rsi",
+        "period": 14,
+        "op": "<=",
+        "value": 33
+      }
     ],
-    "message": "AAPL: 20일선이 50일선 위로 (골든크로스)"
+    "message": "QQQ: RSI 33 이하"
   },
   {
-    "id": "aapl_combo",
-    "symbol": "AAPL",
+    "id": "spy_touch_200sma",
+    "symbol": "SPY",
     "interval": "1day",
     "conditions": [
-      { "type": "rsi", "op": "<=", "value": 35 },
-      { "type": "macd_hist", "op": ">", "value": 0 },
-      { "type": "price", "op": ">", "compare_to": { "type": "ema", "period": 20 } }
+      {
+        "type": "price",
+        "op": "near",
+        "compare_to": {
+          "type": "sma",
+          "period": 200
+        },
+        "tolerance_pct": 1.0
+      }
     ],
-    "message": "AAPL: RSI 낮음 + MACD 히스토그램 양전환 + 20일 EMA 위로 회복"
+    "message": "SPY: 가격이 200일 이동평균선 근처(터치)"
+  },
+  {
+    "id": "spy_macd_bull_cross",
+    "symbol": "SPY",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "macd",
+        "op": ">",
+        "compare_to": {
+          "type": "macd_signal"
+        }
+      }
+    ],
+    "message": "SPY: MACD가 시그널선 위로 (골든크로스)"
+  },
+  {
+    "id": "spy_rsi_oversold",
+    "symbol": "SPY",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "rsi",
+        "period": 14,
+        "op": "<=",
+        "value": 33
+      }
+    ],
+    "message": "SPY: RSI 33 이하"
+  },
+  {
+    "id": "nvda_touch_200sma",
+    "symbol": "NVDA",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "price",
+        "op": "near",
+        "compare_to": {
+          "type": "sma",
+          "period": 200
+        },
+        "tolerance_pct": 1.0
+      }
+    ],
+    "message": "NVDA: 가격이 200일 이동평균선 근처(터치)"
+  },
+  {
+    "id": "nvda_macd_bull_cross",
+    "symbol": "NVDA",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "macd",
+        "op": ">",
+        "compare_to": {
+          "type": "macd_signal"
+        }
+      }
+    ],
+    "message": "NVDA: MACD가 시그널선 위로 (골든크로스)"
+  },
+  {
+    "id": "nvda_rsi_oversold",
+    "symbol": "NVDA",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "rsi",
+        "period": 14,
+        "op": "<=",
+        "value": 33
+      }
+    ],
+    "message": "NVDA: RSI 33 이하"
+  },
+  {
+    "id": "goog_touch_200sma",
+    "symbol": "GOOG",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "price",
+        "op": "near",
+        "compare_to": {
+          "type": "sma",
+          "period": 200
+        },
+        "tolerance_pct": 1.0
+      }
+    ],
+    "message": "GOOG: 가격이 200일 이동평균선 근처(터치)"
+  },
+  {
+    "id": "goog_macd_bull_cross",
+    "symbol": "GOOG",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "macd",
+        "op": ">",
+        "compare_to": {
+          "type": "macd_signal"
+        }
+      }
+    ],
+    "message": "GOOG: MACD가 시그널선 위로 (골든크로스)"
+  },
+  {
+    "id": "goog_rsi_oversold",
+    "symbol": "GOOG",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "rsi",
+        "period": 14,
+        "op": "<=",
+        "value": 33
+      }
+    ],
+    "message": "GOOG: RSI 33 이하"
+  },
+  {
+    "id": "soxx_touch_200sma",
+    "symbol": "SOXX",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "price",
+        "op": "near",
+        "compare_to": {
+          "type": "sma",
+          "period": 200
+        },
+        "tolerance_pct": 1.0
+      }
+    ],
+    "message": "SOXX: 가격이 200일 이동평균선 근처(터치)"
+  },
+  {
+    "id": "soxx_macd_bull_cross",
+    "symbol": "SOXX",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "macd",
+        "op": ">",
+        "compare_to": {
+          "type": "macd_signal"
+        }
+      }
+    ],
+    "message": "SOXX: MACD가 시그널선 위로 (골든크로스)"
+  },
+  {
+    "id": "soxx_rsi_oversold",
+    "symbol": "SOXX",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "rsi",
+        "period": 14,
+        "op": "<=",
+        "value": 33
+      }
+    ],
+    "message": "SOXX: RSI 33 이하"
+  },
+  {
+    "id": "be_touch_200sma",
+    "symbol": "BE",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "price",
+        "op": "near",
+        "compare_to": {
+          "type": "sma",
+          "period": 200
+        },
+        "tolerance_pct": 1.0
+      }
+    ],
+    "message": "BE: 가격이 200일 이동평균선 근처(터치)"
+  },
+  {
+    "id": "be_macd_bull_cross",
+    "symbol": "BE",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "macd",
+        "op": ">",
+        "compare_to": {
+          "type": "macd_signal"
+        }
+      }
+    ],
+    "message": "BE: MACD가 시그널선 위로 (골든크로스)"
+  },
+  {
+    "id": "be_rsi_oversold",
+    "symbol": "BE",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "rsi",
+        "period": 14,
+        "op": "<=",
+        "value": 33
+      }
+    ],
+    "message": "BE: RSI 33 이하"
+  },
+  {
+    "id": "amd_touch_200sma",
+    "symbol": "AMD",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "price",
+        "op": "near",
+        "compare_to": {
+          "type": "sma",
+          "period": 200
+        },
+        "tolerance_pct": 1.0
+      }
+    ],
+    "message": "AMD: 가격이 200일 이동평균선 근처(터치)"
+  },
+  {
+    "id": "amd_macd_bull_cross",
+    "symbol": "AMD",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "macd",
+        "op": ">",
+        "compare_to": {
+          "type": "macd_signal"
+        }
+      }
+    ],
+    "message": "AMD: MACD가 시그널선 위로 (골든크로스)"
+  },
+  {
+    "id": "amd_rsi_oversold",
+    "symbol": "AMD",
+    "interval": "1day",
+    "conditions": [
+      {
+        "type": "rsi",
+        "period": 14,
+        "op": "<=",
+        "value": 33
+      }
+    ],
+    "message": "AMD: RSI 33 이하"
   }
 ]
