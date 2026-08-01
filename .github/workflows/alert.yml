@@ -2,8 +2,9 @@ name: RSI/MACD Alert Check
 
 on:
   schedule:
-    # UTC 기준 30분마다. 필요하면 간격을 조정하세요 (예: '0 * * * *' = 매시 정각).
-    - cron: "*/30 * * * *"
+    # 매시 정각. 종목 7개 x 조건 3종 = 실행당 약 28회 API 호출.
+    # 무료 요금제 하루 800회 한도 안에서 여유있게 돌아가도록 1시간 간격으로 설정.
+    - cron: "0 * * * *"
   workflow_dispatch: {}   # Actions 탭에서 수동으로도 실행 가능
 
 permissions:
