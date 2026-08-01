@@ -1,0 +1,40 @@
+[
+  {
+    "id": "crm_rsi_oversold",
+    "symbol": "CRM",
+    "interval": "1day",
+    "conditions": [
+      { "type": "rsi", "period": 14, "op": "<=", "value": 30 }
+    ],
+    "message": "CRM: RSI 30 이하 (과매도)"
+  },
+  {
+    "id": "crm_macd_bull_cross",
+    "symbol": "CRM",
+    "interval": "1day",
+    "conditions": [
+      { "type": "macd", "op": ">", "compare_to": { "type": "macd_signal" } }
+    ],
+    "message": "CRM: MACD가 시그널선 위로 올라옴 (골든크로스)"
+  },
+  {
+    "id": "aapl_golden_cross_sma",
+    "symbol": "AAPL",
+    "interval": "1day",
+    "conditions": [
+      { "type": "sma", "period": 20, "op": ">", "compare_to": { "type": "sma", "period": 50 } }
+    ],
+    "message": "AAPL: 20일선이 50일선 위로 (골든크로스)"
+  },
+  {
+    "id": "aapl_combo",
+    "symbol": "AAPL",
+    "interval": "1day",
+    "conditions": [
+      { "type": "rsi", "op": "<=", "value": 35 },
+      { "type": "macd_hist", "op": ">", "value": 0 },
+      { "type": "price", "op": ">", "compare_to": { "type": "ema", "period": 20 } }
+    ],
+    "message": "AAPL: RSI 낮음 + MACD 히스토그램 양전환 + 20일 EMA 위로 회복"
+  }
+]
