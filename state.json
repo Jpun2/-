@@ -4,5 +4,8 @@
   },
   "aapl_golden_cross_sma": {
     "alerted": true
+  },
+  "goog_macd_bull_cross": {
+    "alerted": true
   }
 }
