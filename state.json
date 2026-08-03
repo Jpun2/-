@@ -7,5 +7,11 @@
   },
   "goog_macd_bull_cross": {
     "alerted": true
+  },
+  "spy_macd_bull_cross": {
+    "alerted": true
+  },
+  "be_macd_bull_cross": {
+    "alerted": true
   }
 }
