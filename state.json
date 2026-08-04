@@ -13,5 +13,11 @@
   },
   "be_macd_bull_cross": {
     "alerted": true
+  },
+  "qqq_macd_bull_cross": {
+    "alerted": true
+  },
+  "nvda_macd_bull_cross": {
+    "alerted": true
   }
 }
