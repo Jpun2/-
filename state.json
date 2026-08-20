@@ -9,7 +9,7 @@
     "alerted": false
   },
   "spy_macd_bull_cross": {
-    "alerted": true
+    "alerted": false
   },
   "be_macd_bull_cross": {
     "alerted": true
@@ -24,6 +24,6 @@
     "alerted": true
   },
   "amd_macd_bull_cross": {
-    "alerted": true
+    "alerted": false
   }
 }
