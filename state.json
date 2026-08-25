@@ -12,7 +12,7 @@
     "alerted": false
   },
   "be_macd_bull_cross": {
-    "alerted": false
+    "alerted": true
   },
   "qqq_macd_bull_cross": {
     "alerted": false
