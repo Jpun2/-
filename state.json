@@ -18,7 +18,7 @@
     "alerted": false
   },
   "nvda_macd_bull_cross": {
-    "alerted": true
+    "alerted": false
   },
   "soxx_macd_bull_cross": {
     "alerted": false
