@@ -24,7 +24,7 @@
     "alerted": false
   },
   "amd_macd_bull_cross": {
-    "alerted": false
+    "alerted": true
   },
   "goog_touch_200sma": {
     "alerted": true
