@@ -15,13 +15,13 @@
     "alerted": true
   },
   "qqq_macd_bull_cross": {
-    "alerted": false
+    "alerted": true
   },
   "nvda_macd_bull_cross": {
     "alerted": true
   },
   "soxx_macd_bull_cross": {
-    "alerted": false
+    "alerted": true
   },
   "amd_macd_bull_cross": {
     "alerted": true
