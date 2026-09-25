@@ -27,6 +27,6 @@
     "alerted": true
   },
   "goog_touch_200sma": {
-    "alerted": true
+    "alerted": false
   }
 }
