@@ -27,7 +27,7 @@
     "alerted": false
   },
   "goog_touch_200sma": {
-    "alerted": true
+    "alerted": false
   },
   "soxx_rsi_oversold": {
     "alerted": false
