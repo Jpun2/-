@@ -30,7 +30,7 @@
     "alerted": false
   },
   "soxx_rsi_oversold": {
-    "alerted": true
+    "alerted": false
   },
   "be_touch_200sma": {
     "alerted": false
