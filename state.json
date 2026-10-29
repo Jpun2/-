@@ -33,10 +33,10 @@
     "alerted": false
   },
   "be_touch_200sma": {
-    "alerted": false
+    "alerted": true
   },
   "goog_rsi_oversold": {
-    "alerted": false
+    "alerted": true
   },
   "soxx_touch_200sma": {
     "alerted": false
