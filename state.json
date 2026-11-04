@@ -45,7 +45,7 @@
     "alerted": true
   },
   "qqq_touch_200sma": {
-    "alerted": true
+    "alerted": false
   },
   "qqq_rsi_oversold": {
     "alerted": false
