@@ -60,6 +60,6 @@
     "alerted": false
   },
   "amd_rsi_oversold": {
-    "alerted": true
+    "alerted": false
   }
 }
