@@ -30,13 +30,13 @@
     "alerted": false
   },
   "soxx_rsi_oversold": {
-    "alerted": true
+    "alerted": false
   },
   "be_touch_200sma": {
     "alerted": false
   },
   "goog_rsi_oversold": {
-    "alerted": true
+    "alerted": false
   },
   "soxx_touch_200sma": {
     "alerted": false
@@ -45,13 +45,13 @@
     "alerted": false
   },
   "qqq_touch_200sma": {
-    "alerted": false
+    "alerted": true
   },
   "qqq_rsi_oversold": {
-    "alerted": true
+    "alerted": false
   },
   "spy_touch_200sma": {
-    "alerted": true
+    "alerted": false
   },
   "nvda_rsi_oversold": {
     "alerted": true
