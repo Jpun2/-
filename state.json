@@ -64,5 +64,8 @@
   },
   "spy_rsi_oversold": {
     "alerted": true
+  },
+  "be_rsi_oversold": {
+    "alerted": true
   }
 }
