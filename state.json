@@ -61,5 +61,8 @@
   },
   "amd_rsi_oversold": {
     "alerted": false
+  },
+  "spy_rsi_oversold": {
+    "alerted": true
   }
 }
