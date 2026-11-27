@@ -51,7 +51,7 @@
     "alerted": false
   },
   "spy_touch_200sma": {
-    "alerted": false
+    "alerted": true
   },
   "nvda_rsi_oversold": {
     "alerted": false
